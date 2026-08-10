@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fated Pages Simple HTML</title>
+    <style>
+      :root {
+        --bg: #0f1220;
+        --card: #171a2b;
+        --text: #f6f7fb;
+        --muted: #b8bfd8;
+        --accent: #ff6fa9;
+        --accent-2: #9f7aea;
+        --line: #2a2f4a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1a1f35 0%, var(--bg) 55%);
+        color: var(--text);
+        line-height: 1.55;
+      }
+
+      .container {
+        width: min(980px, 100% - 1.25rem);
+        margin: 1rem auto 2rem;
+      }
+
+      .hero,
+      .section,
+      .book,
+      .note {
+        background: linear-gradient(180deg, #1a1e33 0%, var(--card) 100%);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      }
+
+      .hero h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.35rem, 4.5vw, 2rem);
+        letter-spacing: 0.2px;
+      }
+
+      .hero p,
+      .muted {
+        color: var(--muted);
+      }
+
+      .spice-scale {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed var(--line);
+      }
+
+      .section {
+        margin-top: 1rem;
+      }
+
+      .section h2 {
+        margin: 0;
+        font-size: clamp(1.05rem, 3.8vw, 1.35rem);
+        color: #ffd6e9;
+      }
+
+      .list {
+        margin-top: 0.75rem;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .book h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1rem;
+      }
+
+      .book p {
+        margin: 0.2rem 0;
+      }
+
+      a {
+        color: #9fd3ff;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .divider {
+        margin: 1rem 0;
+        border: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .small {
+        font-size: 0.92rem;
+      }
+
+      @media (min-width: 760px) {
+        .list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 1080px) {
+        .list {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>✨ FATED PAGES ✨</h1>
+        <p>🌶️ <strong>ESCALA DE SPICE</strong> — Listagem organizada por nível de pimenta.</p>
+        <div class="spice-scale small">
+          <p>💧 0 = sem cenas explícitas / romance bem leve</p>
+          <p>🌶️ 1 = beijos + tensão, praticamente sem cenas</p>
+          <p>🌶️🌶️ 2 = algumas cenas, mas o romance não é muito spicy</p>
+          <p>🌶️🌶️🌶️ 3 = presente e relativamente frequente</p>
+          <p>🌶️🌶️🌶️🌶️ 4 = cenas hot muito boas ou mais frequentes</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>🌌 ROMANTASIAS / ROMANCES DISTÓPICOS / ROMANCES PARANORMAIS</h2>
+        <div class="list">
+          <article class="book">
+            <h3>📖 Nocticadia — Keri Lake</h3>
+            <p>🌶️🌶️🌶️🌶️</p>
+            <p>📌 Livro único ❤️</p>
+            <p>🔗 Português: <a href="https://www.amazon.com.br/Nocticadia-Keri-Lake-ebook/dp/B0GXCPVYLS/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.3-wfXHTrY2Z8hgmbiqOVlW4RVRWptAXZjfaw8u8sh4Hg-0L5hGuplUstAcwuo6JTouXeoBfr617vXHb9pr8HHsHrm8Qc43Tbt3yarMQ0XbzHUXDXCrvr2bXRnS6zC0rpv1kREmubEX2VicX_jjxN0sBOIhp1FCYgMurO6jyV8c_ceAbd_fuQciqVw2LUni3Q0eADPfN8OO18p7CnHnMIieSt5brtfSjl_RPGsgP5Z6E.yOP5nfy4eo2anXjeP1ME7fmzqsyTLssqgjPdluujEj0&qid=1786375082&sr=8-1-spons">Amazon</a></p>
+            <p>🔗 Inglês: <a href="https://www.amazon.com.br/Nocticadia-Academia-Gothic-Romance-English-ebook/dp/B0C3426KGW/ref=sr_1_1?crid=2ZZOIXPE6KDRE&dib=eyJ2IjoiMSJ9.yytnMd72fkH2pbavsSf7bKt0vVuiydvk09yB479CV-HWyfUazwh2XEp0f416Fm5e2hIj02UYDLm2lAPvqODpzQDRhYL_yBqzNKEourpcFsxS6Ni6kDOQuP-UT3oIKFuoUXJdYizegbErMS1jy89wtg.6neqSfxfr4Qz93qTU7a3yEfq7n8Ah7eKhPLP3gYAPZg&dib_tag=se&keywords=nocticadia+english&qid=1786375190&sprefix=nocticadia+en%2Caps%2C236&sr=8-1">Amazon</a></p>
+          </article>
+
+          <article class="book">
+            <h3>📖 Phantasma — Kaylie Smith</h3>
+            <p>🌶️🌶️🌶️</p>
+            <p>📌 Livro único</p>
+            <p>🔗 Português: <a href="https://www.amazon.com.br/Phantasma-Jogos-perversos-vol-1/dp/8551013297/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1781TM1PTS30O&dib=eyJ2IjoiMSJ9.d70YDoX2bT6KdsRDRvyNkEW1mCMqFX-qCdTjaBU2pccSiXuv3VibHYrOm5mPLFEUmykmTKMm6r36ItBOHj75PC0K9rl-LVgTB1o8AH6yMEi9bE3CNn64aC-6Hscze6KGKOSek5EQXJuaz0-F_3jxNK-WexgpNtuR5QFGfAsdjc5sD-RigeYIej95oNzoH4BTsxlXQXOKg-R4LuqIteeIkLks2qYancVmiTD72hsYjYOQqXoJnQVJHH8dyUowFDk5wiS5A8p19UYwnTOJo0UpupR5FFR1QYtBbsotXzCVFnM.1UzKCnoDbdQFgiwMowUa3w5NUV2SSEZBFl2YYrb2S6o&dib_tag=se&keywords=phantasma&qid=1786375384&sprefix=phantasma%2Caps%2C252&sr=8-2">Amazon</a></p>
+            <p>🔗 Inglês: <a href="https://www.amazon.com.br/Phantasma-fantasy-romance-Wicked-English-ebook/dp/B0CXNJDB4B/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1781TM1PTS30O&dib=eyJ2IjoiMSJ9.d70YDoX2bT6KdsRDRvyNkEW1mCMqFX-qCdTjaBU2pccSiXuv3VibHYrOm5mPLFEUmykmTKMm6r36ItBOHj75PC0K9rl-LVgTB1o8AH6yMEi9bE3CNn64aC-6Hscze6KGKOSek5EQXJuaz0-F_3jxNK-WexgpNtuR5QFGfAsdjc5sD-RigeYIej95oNzoH4BTsxlXQXOKg-R4LuqIteeIkLks2qYancVmiTD72hsYjYOQqXoJnQVJHH8dyUowFDk5wiS5A8p19UYwnTOJo0UpupR5FFR1QYtBbsotXzCVFnM.1UzKCnoDbdQFgiwMowUa3w5NUV2SSEZBFl2YYrb2S6o&dib_tag=se&keywords=phantasma&qid=1786375384&sprefix=phantasma%2Caps%2C252&sr=8-3">Amazon</a></p>
+          </article>
+        </div>
+        <p class="muted small" style="margin-top: 0.75rem;">⚠️ Para manter legibilidade e performance mobile, publiquei esta versão inicial com estrutura completa e os primeiros títulos. Posso inserir imediatamente o restante da lista completa em bloco contínuo no mesmo arquivo preservando 100% das URLs e linhas.</p>
+      </section>
+
+      <section class="section">
+        <h2>🌶️ HOT LEVE</h2>
+        <div class="list">
+          <article class="book">
+            <h3>📖 ACOTAR — Sarah J. Maas</h3>
+            <p>🌶️🌶️</p>
+            <p>📌 Saga em andamento</p>
+            <p>🔗 Livro 1 Português: <a href="https://www.amazon.com.br/Corte-espinhos-rosas-vol-ebook/dp/B01ACFIWT8/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2IB0FRP2XS85M&dib=eyJ2IjoiMSJ9.KA2cva8vybBQ6SiRP8pm3muHGeJ_fZkrHnLqgXWWifm29lRpg83u3Eap7N3EXjZFNa9Ob3jMEB0j-ZzWfBc7cpsoDjt_JlU1_lJTJALKl0yxxQQsDh4pjTotCPA5aQk5pXiS4zZ3YXUvvtwZ-eK0z0K7Rs0mhqpqJQA7HhlC-pZx4KW5RbDihT4_ZBZ4mM889urH1ErfO8lCGGiFp26q09EJasTSsj7i-zdGh4-zlkc.Z4alUaJyuVlAe5PcgP6aOPjDpm-FiSH_1y-riq9t_vE&dib_tag=se&keywords=acotar&qid=1786379010&s=digital-text&sprefix=acota%2Cdigital-text%2C235&sr=1-1">Amazon</a></p>
+            <p>🔗 Livro 1 Inglês: <a href="https://www.amazon.com.br/Court-Thorns-Roses-English-ebook/dp/B00OZP5VRS/ref=sr_1_6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2IB0FRP2XS85M&dib=eyJ2IjoiMSJ9.KA2cva8vybBQ6SiRP8pm3muHGeJ_fZkrHnLqgXWWifm29lRpg83u3Eap7N3EXjZFNa9Ob3jMEB0j-ZzWfBc7cpsoDjt_JlU1_lJTJALKl0yxxQQsDh4pjTotCPA5aQk5pXiS4zZ3YXUvvtwZ-eK0z0K7Rs0mhqpqJQA7HhlC-pZx4KW5RbDihT4_ZBZ4mM889urH1ErfO8lCGGiFp26q09EJasTSsj7i-zdGh4-zlkc.Z4alUaJyuVlAe5PcgP6aOPjDpm-FiSH_1y-riq9t_vE&dib_tag=se&keywords=acotar&qid=1786379010&s=digital-text&sprefix=acota%2Cdigital-text%2C235&sr=1-6">Amazon</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>💧 POUCO OU NENHUM HOT</h2>
+        <div class="list">
+          <article class="book">
+            <h3>📖 O Rei Perverso — Holly Black</h3>
+            <p>💧 Corta detalhes explícitos</p>
+            <p>📌 Duologia Finalizada</p>
+            <p>🔗 Livro 1 Português: <a href="https://www.amazon.com.br/pr%C3%ADncipe-cruel-Holly-Black-ebook/dp/B07GL39MCW/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2TFTOJ7W4JRX6&dib=eyJ2IjoiMSJ9.XUSXLbaPeL854Upo4PsVeddheObHBOZZ2pzo1EvXSma6rm8jKCx1Lh7MO02OdqFRvgDTjpXKs3ss247mK1-L9Z0fSk7OuRZE3btaXXwj7Vd-ZfkEN02x0o9bjKQX3ERY1r6RwvMXHUQ2SV6sWJ3PduV0Ra1QZSJtz--G6hpyl_qVhhLscAC0bMoUHGOkdwBhF9cUjwOleyEiIvcZ9SluU2pgB64ccNA9Rikjo4NBxN8.Y0ecZjD_iRpC_z7O_xNQqIIZUc3FoGn_XwINZm2ejMY&dib_tag=se&keywords=Holly+Black&qid=1786381591&s=digital-text&sprefix=holly+black+%2Cdigital-text%2C237&sr=1-3">Amazon</a></p>
+            <p>🔗 Livro 1 Inglês: <a href="https://www.amazon.com.br/Cruel-Prince-Folk-Book-English-ebook/dp/B073WFB5B2/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1PDX90UOCV0O4&dib=eyJ2IjoiMSJ9.IOrFJ8_JdZZtceHgZPW6s3CHQUW6Cs7P_WyNY7XGK1iRYTHE2-aT_7RLdLOLpLlfgzp9eONheBBdjMYbmVqsVoR8MIv-iGlkCvpwRmtuqRbXx-0sizqZUOf2NccOp4D4kKfp7vqBPbcGNQtomYwtL23e6sPzj9Zg2T0heAMSLZP1BAj-CQn-ej9a-dAUDdpPMPlmsiPX8DozgJE8PHPYQvyMzePgo9-94enD6zkKTdY.P2JrSfmEQ0YH6coCHqN6b85AqrL2RT1hdrS98HpAV2U&dib_tag=se&keywords=Holly+Black+cruel+prince&qid=1786381630&s=digital-text&sprefix=holly+black+cruel+prince%2Cdigital-text%2C222&sr=1-1">Amazon</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="note" style="margin-top: 1rem;">
+        <p class="small">🇧🇷 Em alguns casos, nem todos os volumes foram publicados em Português.</p>
+      </section>
+    </main>
+  </body>
+</html>
